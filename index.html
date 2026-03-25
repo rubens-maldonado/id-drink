@@ -667,6 +667,13 @@
             box-shadow: 0 20px 60px rgba(196, 92, 38, 0.15);
         }
 
+        .diff-icon img {
+           width: 100%;
+           height: 100%;
+            object-fit: cover; /* mantém proporção bonita */
+            border-radius: 50%; /* deixa redondo igual antes */
+        }
+        
         .diff-icon {
             width: 80px;
             height: 80px;
@@ -1420,7 +1427,7 @@
             </div>
             <h1>
                 Churrasco, Estação Gastronômica e <br>
-                <span class="gradient-text">Drinks</span>
+                <span class="gradient-text">Drinks, na sua casa</span>
             </h1>
             <p>Transforme seu evento em uma experiência única com serviço premium de churrasco, buffet e bartender profissional.</p>
             <div class="hero-buttons">
@@ -1510,19 +1517,25 @@
 
             <div class="diff-grid">
                 <div class="diff-card reveal-scale" style="transition-delay: 0.1s">
-                    <div class="diff-icon">🔥</div>
+                    <div class="diff-icon">
+                      <img src="public/images/FLAME.jpg" alt="Shot Flamejante">
+                    </div>
                     <h3>Shot Flamejante 2.0</h3>
                     <p>Um verdadeiro espetáculo de fogo e sabor! Shots preparados com técnica flamejante que encantam e impressionam todos os convidados.</p>
                 </div>
 
                 <div class="diff-card reveal-scale" style="transition-delay: 0.25s">
-                    <div class="diff-icon">💉</div>
+                    <div class="diff-icon">
+                        <img src="public/images/seringa.jpg" alt="Seringa da Felicidade">
+                    </div>
                     <h3>Seringa da Felicidade</h3>
                     <p>Drinks servidos de forma divertida e interativa em seringas especiais. Uma experiência que garante risadas e fotos incríveis!</p>
                 </div>
 
                 <div class="diff-card reveal-scale" style="transition-delay: 0.4s">
-                    <div class="diff-icon">🍽️</div>
+                    <div class="diff-icon">
+                        <img src="public/images/BUFFET2.jpg" alt="Prato Surpresa">
+                    </div>
                     <h3>Prato Surpresa</h3>
                     <p>Uma criação gastronômica exclusiva do nosso chef que surpreende pelo visual e pelo sabor. O grande destaque do seu evento!</p>
                 </div>
