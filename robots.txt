@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iddrinks.com.br/sitemap.xml
