@@ -1,0 +1,135 @@
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 1024px) {
+    .services-grid,
+    .diff-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    .header-cta-desktop {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .stat-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .services-grid,
+    .diff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand p {
+        max-width: 100%;
+    }
+
+    .footer-social-icons {
+        justify-content: center;
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-images {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about-images img:first-child {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding-inline: clamp(12px, 4vw, 20px);
+    }
+
+    .hero-badge {
+        max-width: 100%;
+        padding-inline: 12px;
+        font-size: clamp(0.7rem, 3vw, 0.85rem);
+    }
+
+    .hero-buttons .btn {
+        padding-inline: clamp(16px, 5vw, 24px);
+    }
+
+    .stat-item {
+        padding: clamp(16px, 5vw, 24px) 8px;
+    }
+
+    .stat-label {
+        font-size: clamp(0.7rem, 3vw, 0.8rem);
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .gallery-item {
+        border-radius: 10px;
+    }
+
+    .diff-card {
+        padding: 30px 20px;
+    }
+
+    .cta-banner {
+        padding: 60px 20px;
+    }
+}

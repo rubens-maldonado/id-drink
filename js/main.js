@@ -1,0 +1,4 @@
+initMenu();
+initScroll();
+initAnimations();
+initGallery();
