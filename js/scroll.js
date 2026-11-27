@@ -19,10 +19,13 @@ function initScroll() {
         } else {
             scrollTopBtn.classList.remove('visible');
         }
-    });
+    }, { passive: true });
+
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const scrollBehavior = prefersReducedMotion ? 'auto' : 'smooth';
 
     function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: scrollBehavior });
     }
 
     scrollTopBtn.addEventListener('click', scrollToTop);
@@ -34,7 +37,7 @@ function initScroll() {
             const targetId = this.getAttribute('href');
             const target = document.querySelector(targetId);
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
+                target.scrollIntoView({ behavior: scrollBehavior });
                 if (this.classList.contains('skip-link')) target.focus({ preventScroll: true });
             }
         });
